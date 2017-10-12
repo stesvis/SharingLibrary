@@ -178,6 +178,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PersonsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -261,10 +262,6 @@
     <ProjectReference Include="..\Shared_2\Shared_2.csproj">
       <Project>{969f9670-ba58-45b4-a7ed-fa70f1606d1b}</Project>
       <Name>Shared_2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shared_3\Shared_3.csproj">
-      <Project>{0b49080d-1ce6-49d0-80a6-ac2392f5b331}</Project>
-      <Name>Shared_3</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
