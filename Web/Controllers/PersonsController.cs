@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Shared_2;
 
 namespace Web.Controllers
 {
@@ -18,12 +19,7 @@ namespace Web.Controllers
         // GET: api/Persons/5
         public IHttpActionResult Get(int id)
         {
-            var person = new PersonDTO
-            {
-                Id = id,
-                Name = "Johnny",
-                Age = 50
-            };
+            var person = new Person_2();
 
             return Ok(person);
         }
@@ -42,17 +38,5 @@ namespace Web.Controllers
         public void Delete(int id)
         {
         }
-    }
-
-    /// <summary>
-    /// I want this class in a shared library, so that i can use it in the Mobile (Portable) project
-    /// </summary>
-    public class PersonDTO
-    {
-        public int Id { get; set; }
-
-        public string Name { get; set; }
-
-        public int Age { get; set; }
     }
 }
